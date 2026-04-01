@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Vinicios | Cientista de Dados</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="portfolio-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">Carlos Vinicios</div>
+      <nav class="nav">
+        <a href="#home" class="nav-link active">Início</a>
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#works" class="nav-link">Projetos</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </nav>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section section-padding">
+        <div class="hero-content">
+          <h1 class="hero-title">Olá,<br>eu sou <span class="highlight">Carlos Vinicios</span><br>Cientista de Dados
+          </h1>
+          <a href="#contact" class="btn btn-primary">Fale comigo</a>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/carlos-vinicios-datascientist/" target="_blank" rel="noreferrer"
+              aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/viniciiooss" target="_blank" rel="noreferrer" aria-label="GitHub"><i
+                class="fab fa-github"></i></a>
+            <a href="https://wa.me/5593991271984?text=Ol%C3%A1%20Carlos%2C%20vim%20pelo%20seu%20portf%C3%B3lio."
+              target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="blob">
+            <!-- URL genérica para substituição pela foto real -->
+            <img src="image.png" alt="Carlos Vinicios - Cientista de Dados">
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section section-padding">
+        <div class="section-header">
+          <h2>Sobre Mim</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="about-content">
+          <p>
+            Cientista de Dados com foco no desenvolvimento de soluções avançadas com LLMs.
+            Com sólida experiência em pipelines RAG (Retrieval-Augmented Generation), orquestração de Agentes
+            e bancos de dados vetoriais, atuo no ciclo completo de MLOps e engenharia de dados.
+            Busco constantemente criar produtos e arquiteturas escaláveis que resolvem problemas reais.
+          </p>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section section-padding">
+        <div class="section-header">
+          <h2>Minhas Habilidades</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fas fa-brain"></i>
+            <h3>LLMs & RAG</h3>
+            <p>Prompting avançado, function calling, embeddings, retrieval e geração de saídas com JSON Schema.</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-robot"></i>
+            <h3>Agentes & Orquestração</h3>
+            <p>Implementação de agentes autônomos utilizando CrewAI, LangChain, Langflow e LlamaIndex.</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>Bancos Vetoriais</h3>
+            <p>Experiência prática em produção com Qdrant, Chroma, Weaviate e pgvector.</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-cloud"></i>
+            <h3>AWS & MLOps</h3>
+            <p>Integração com ecossistema AWS (S3, SageMaker), Azure DevOps CI/CD e monitoramento corporativo.</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-server"></i>
+            <h3>Back-end & APIs</h3>
+            <p>Desenvolvimento de APIs com FastAPI e Node.js, integrações com webhooks, autenticação e serviços
+              assíncronos.</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Deploy & Observabilidade</h3>
+            <p>Docker, Docker Compose, MLflow, Langfuse, Grafana e logs estruturados para operação, monitoramento e
+              análise em produção.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Works / Projects Section -->
+      <section id="works" class="works-section section-padding">
+        <div class="section-header">
+          <h2>Projetos em Destaque</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="projects-grid">
+          <!-- Project 1: Pipeline PPE (Was 3) -->
+          <div class="project-card" data-title="Pipeline PPE (Diários Oficiais)"
+            data-img="Projetos/Attachments/projeto_ppe/FB811778-E982-4992-AAB4-4859444031A1.png"
+            data-tags="FastAPI,Agno Agents,OCR via LLM,Docker,MySQL">
+            <div class="project-img">
+              <img src="Projetos/Attachments/projeto_ppe/FB811778-E982-4992-AAB4-4859444031A1.png" alt="Pipeline PPE">
+            </div>
+            <div class="project-content">
+              <h3>Pipeline PPE (Diários Oficiais)</h3>
+              <p>Sistema automatizado para processar o Diário Oficial do Estado do Piauí, extraindo e classificando
+                movimentações de servidores públicos a partir de PDFs não estruturados até a entrega em Excel e banco
+                relacional.</p>
+              <div class="tags">
+                <span>FastAPI</span>
+                <span>Agno Agents</span>
+                <span>OCR via LLM</span>
+                <span>Docker</span>
+                <span>MySQL</span>
+              </div>
+              <button class="btn btn-primary btn-details mt-10">Ver Detalhes</button>
+            </div>
+            <div class="project-details" style="display: none;">
+              <p>O PPE (Promoções, Progressões e Enquadramentos) automatiza o processamento do Diário Oficial do Estado
+                do Piauí para identificar promoções, progressões, enquadramentos e nomeações de servidores. O pipeline
+                transforma PDFs complexos e pouco estruturados em registros organizados para consumo operacional e
+                gerencial.</p>
+              <h4>Arquitetura do pipeline</h4>
+              <ul>
+                <li><strong>Entrada documental:</strong> PDFs do DOEPI processados com poppler-utils e tesseract-ocr
+                  para OCR e extração inicial.</li>
+                <li><strong>Camada inteligente:</strong> agentes LLM gerenciados pelo framework Agno, com Gemini 2.5
+                  Flash/Pro como principal e Kimi como fallback automático.</li>
+                <li><strong>Automação operacional:</strong> interface em PHP CodeIgniter para disparo e monitoramento
+                  dos jobs, com execução diária orquestrada por cron/n8n às 23:59.</li>
+                <li><strong>Saída estruturada:</strong> persistência em MySQL remoto e exportação final em `.xlsx` para
+                  uso direto por equipes gestoras.</li>
+                <li><strong>Configuração parametrizada:</strong> padrões de busca, modelos, datas, limites e labels
+                  definidos em YAML editável sem alterar o código.</li>
+              </ul>
+              <h4>Confiabilidade e segurança</h4>
+              <ul>
+                <li>Autenticação JWT com renovação automática e controle de acesso por papéis.</li>
+                <li>Rate limiting, audit logging e deploy com Docker Compose em workspaces separados.</li>
+              </ul>
+              <div class="project-gallery">
+                <img src="Projetos/Attachments/projeto_ppe/FB811778-E982-4992-AAB4-4859444031A1.png"
+                  alt="Etapas do pipeline PPE">
+                <img src="Projetos/Attachments/projeto_ppe/72E5845E-284D-4C84-B54E-BE3B1B007A20.png"
+                  alt="Arquitetura do sistema PPE">
+                <img src="Projetos/Attachments/projeto_ppe/5ADDB91D-1338-4275-9617-7A2CFD3DB6B1.jpg"
+                  alt="Exemplo de documento processado pelo PPE">
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Plataforma Macroeconômica (Was 1) -->
+          <div class="project-card" data-title="Plataforma Macroeconômica com LLM"
+            data-img="Projetos/Attachments/projeto_macroeconomico/154E8264-DF34-4695-8A0A-C7820F871613.jpg"
+            data-tags="Airflow,PostgreSQL,LangGraph,Chroma,Gemini API">
+            <div class="project-img">
+              <img src="Projetos/Attachments/projeto_macroeconomico/154E8264-DF34-4695-8A0A-C7820F871613.jpg"
+                alt="Plataforma Macroeconômica">
+            </div>
+            <div class="project-content">
+              <h3>Plataforma Macroeconômica com LLM</h3>
+              <p>Plataforma completa para ingestão, persistência e exploração de indicadores econômicos brasileiros com
+                pipelines Airflow, banco PostgreSQL, dashboards Streamlit e chat híbrido com DataFrame Agent e RAG.</p>
+              <div class="tags">
+                <span>Airflow</span>
+                <span>PostgreSQL</span>
+                <span>LangGraph</span>
+                <span>Chroma</span>
+                <span>Gemini API</span>
+              </div>
+              <button class="btn btn-primary btn-details mt-10">Ver Detalhes</button>
+            </div>
+            <div class="project-details" style="display: none;">
+              <p>Aplicação completa para ingestão, persistência e exploração de indicadores econômicos brasileiros. O
+                projeto reúne pipelines ETL, banco relacional, dashboards analíticos e um chat com IA para consulta
+                guiada de séries históricas, indicadores e documentação técnica do próprio sistema.</p>
+              <h4>O que foi implementado</h4>
+              <ul>
+                <li><strong>Pipelines Airflow:</strong> backfill histórico e atualização diária consumindo BCB, IPEA,
+                  SIDRA, Banco Mundial e CoinGecko.</li>
+                <li><strong>Banco PostgreSQL:</strong> modelagem com tabelas de indicadores, valores históricos, logs de
+                  ETL, alertas e views para snapshot macroeconômico.</li>
+                <li><strong>Dashboards Streamlit:</strong> uma versão executiva conectada ao banco e uma versão
+                  standalone em Plotly para demonstração.</li>
+                <li><strong>Chat econômico híbrido:</strong> modo DataFrame Agent com pandas + Gemini para exploração
+                  tabular e modo RAG com LangGraph, Chroma e embeddings HuggingFace para responder com base no código,
+                  esquema e documentação.</li>
+                <li><strong>Documentação indexada:</strong> arquivos de estrutura, overview e dashboard integrados à
+                  camada RAG para permitir respostas contextualizadas.</li>
+              </ul>
+              <h4>Fluxo end-to-end</h4>
+              <ul>
+                <li>Catálogo de indicadores definido em YAML para padronizar origem, categoria e frequência.</li>
+                <li>Extração e transformação idempotentes com cálculo de variações, médias e normalizações.</li>
+                <li>Consumo dos dados por dashboards e pelo chat de IA em diferentes modos de análise.</li>
+              </ul>
+              <div class="project-gallery">
+                <img src="Projetos/Attachments/projeto_macroeconomico/154E8264-DF34-4695-8A0A-C7820F871613.jpg"
+                  alt="Chat econômico da plataforma macroeconômica">
+                <img src="Projetos/Attachments/projeto_macroeconomico/B7089EA7-F2BE-4969-A0DB-1F38B4E801D9.jpg"
+                  alt="Base de indicadores da plataforma macroeconômica">
+                <img src="Projetos/Attachments/projeto_macroeconomico/03CCFA79-7A24-497C-8125-8EB38461C972.jpg"
+                  alt="Dashboard da plataforma macroeconômica">
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Conecta-Zap (Idosos) (Was 2) -->
+          <div class="project-card" data-title="Conecta-Zap: Letramento Digital para Idosos"
+            data-img="Projetos/Attachments/projeto_idosos/5FFF3142-9820-4783-81CB-7105E394B8C4.jpg"
+            data-tags="FastAPI,Evolution API,WhatsApp Cloud,Gemini,PostgreSQL">
+            <div class="project-img">
+              <img src="Projetos/Attachments/projeto_idosos/5FFF3142-9820-4783-81CB-7105E394B8C4.jpg"
+                alt="Conecta-Zap Idosos">
+            </div>
+            <div class="project-content">
+              <h3>Conecta-Zap (Idosos)</h3>
+              <p>Backend conversacional para trilha automatizada de letramento digital via WhatsApp, com onboarding, 10
+                pílulas educativas, agendamento recorrente, métricas operacionais e geração de dicas extras com IA.</p>
+              <div class="tags">
+                <span>FastAPI</span>
+                <span>Evolution API</span>
+                <span>WhatsApp Cloud</span>
+                <span>Gemini</span>
+                <span>PostgreSQL</span>
+              </div>
+              <button class="btn btn-primary btn-details mt-10">Ver Detalhes</button>
+            </div>
+            <div class="project-details" style="display: none;">
+              <p>Aplicação desenvolvida para automatizar uma jornada educativa e social no WhatsApp voltada a idosos,
+                com foco em autonomia digital, segurança contra golpes e uso de serviços essenciais no celular. O
+                sistema envia uma sequência de 10 pílulas de conteúdo com imagem e texto, registra interações, coleta
+                respostas de CTA e feedback final, gera dicas extras com IA e disponibiliza métricas administrativas
+                para acompanhamento da operação.</p>
+              <h4>Problema resolvido</h4>
+              <p>O projeto entrega conteúdo educativo de forma escalável e acessível dentro de um canal já adotado pelo
+                público-alvo, sem exigir download de um novo app ou navegação por uma interface web tradicional.</p>
+              <h4>O que foi implementado</h4>
+              <ul>
+                <li><strong>Backend assíncrono com FastAPI:</strong> ciclo de vida completo, health check, arquivos
+                  estáticos e configuração centralizada por variáveis de ambiente.</li>
+                <li><strong>Integração com WhatsApp:</strong> suporte a Evolution API e WhatsApp Cloud API, webhook,
+                  verificação, tratamento de texto, botões, listas, polls, imagem e áudio.</li>
+                <li><strong>Fluxo conversacional:</strong> onboarding com coleta de nome e idade, opt-in/opt-out,
+                  controle de estados por usuário, CTAs por pílula, pedido de dicas extras e feedback final.</li>
+                <li><strong>Conteúdo educacional estruturado:</strong> 10 pílulas sobre acessibilidade, segurança
+                  digital, golpes, PIX, Gov.br e Meu SUS Digital, com linguagem simplificada e apoio visual.</li>
+                <li><strong>Agendamento automático:</strong> APScheduler com horários recorrentes, proteção contra
+                  reenvio duplicado e progressão automática da trilha.</li>
+                <li><strong>Persistência e observabilidade:</strong> PostgreSQL assíncrono, exportação JSON/CSV, logs
+                  estruturados, correlation ID, Langfuse e proteção básica de PII.</li>
+                <li><strong>Dicas extras com IA:</strong> Gemini via LangChain com timeout, fallback e prompt desenhado
+                  para linguagem simples e apropriada para idosos.</li>
+              </ul>
+              <div class="project-gallery">
+                <img src="Projetos/Attachments/projeto_idosos/5FFF3142-9820-4783-81CB-7105E394B8C4.jpg"
+                  alt="Fluxo principal do projeto Conecta-Zap">
+                <img src="Projetos/Attachments/projeto_idosos/046F898E-E2F8-4759-A77C-A2C21678C4EC.jpg"
+                  alt="Conteúdo educativo sobre links suspeitos">
+                <img src="Projetos/Attachments/projeto_idosos/6B737F49-87AD-4D4C-9AE6-D4C5422F10EC.png"
+                  alt="Material visual de acessibilidade do projeto">
+                <img src="Projetos/Attachments/projeto_idosos/580DEA82-E1BF-450A-A0C5-2938E95DF32F.png"
+                  alt="Material visual do projeto voltado a idosos">
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: IEEE-CIS MLOps -->
+          <div class="project-card" data-title="IEEE-CIS Fraud - MLOps Pipeline"
+            data-img="Projetos/Attachments/projeto_pipeline_mlops/Captura de Tela 2026-04-01 às 14.04.55.png"
+            data-tags="MLOps,AWS SageMaker,Evidently,MLflow,LightGBM">
+            <div class="project-img">
+              <img src="Projetos/Attachments/projeto_pipeline_mlops/Captura de Tela 2026-04-01 às 14.04.55.png"
+                alt="MLOps Pipeline">
+            </div>
+            <div class="project-content">
+              <h3>IEEE-CIS Fraud - MLOps</h3>
+              <p>Pipeline MLOps ponta a ponta para fraude com simulação financeira, monitoramento contínuo de drift,
+                retreinamento condicionado e comparação entre estratégias de operação sobre a base IEEE-CIS Fraud
+                Detection.</p>
+              <div class="tags">
+                <span>MLOps</span>
+                <span>AWS SageMaker</span>
+                <span>Evidently</span>
+                <span>MLflow</span>
+                <span>LightGBM</span>
+              </div>
+              <button class="btn btn-primary btn-details mt-10">Ver Detalhes</button>
+            </div>
+            <div class="project-details" style="display: none;">
+              <p>Este projeto demonstra, ponta a ponta, como um pipeline MLOps completo opera sobre a base pública
+                IEEE-CIS Fraud Detection, cobrindo ingestão, engenharia de features, treinamento, simulação financeira,
+                monitoramento de drift e retreinamento condicionado com rastreabilidade operacional.</p>
+              <h4>Destaques do pipeline</h4>
+              <ul>
+                <li><strong>Fluxo orquestrado:</strong> ingestão, features, treino, simulação, monitoramento e
+                  retreinamento champion/challenger.</li>
+                <li><strong>Modelagem:</strong> LightGBM, HistGradientBoosting e meta logistic stacking com features
+                  históricas por entidade.</li>
+                <li><strong>Monitoramento:</strong> relatórios Evidently em HTML/JSON com PSI, KS, entropia do score e
+                  gatilhos de drift.</li>
+                <li><strong>Rastreabilidade:</strong> MLflow para runs completos, parquets e CSVs para auditoria e
+                  exportação para dashboards.</li>
+                <li><strong>Simulação de negócio:</strong> comparação entre Train-Once, Q30, Q3M e estratégia baseada em
+                  drift, considerando custos de compute e retenção pós falso positivo.</li>
+              </ul>
+              <h4>Resultado de destaque</h4>
+              <p>Com os thresholds atuais, a estratégia acionada por drift entregou aproximadamente US$ 559 mil de lucro
+                acumulado, contra cerca de US$ 229 mil no cenário Train-Once, preservando rastreabilidade financeira e
+                operacional do pipeline.</p>
+              <div class="project-gallery">
+                <img src="Projetos/Attachments/projeto_pipeline_mlops/Captura de Tela 2026-04-01 às 14.04.55.png"
+                  alt="Visão geral do pipeline MLOps">
+                <img src="Projetos/Attachments/projeto_pipeline_mlops/Captura de Tela 2026-04-01 às 14.05.05.png"
+                  alt="Métricas do pipeline MLOps">
+                <img src="Projetos/Attachments/projeto_pipeline_mlops/Captura de Tela 2026-04-01 às 14.05.17.png"
+                  alt="Comparação de estratégias do pipeline MLOps">
+                <img src="Projetos/Attachments/projeto_pipeline_mlops/Captura de Tela 2026-04-01 às 14.05.28.png"
+                  alt="Monitoramento de drift no pipeline MLOps">
+                <img src="Projetos/Attachments/projeto_pipeline_mlops/Captura de Tela 2026-04-01 às 14.05.37.png"
+                  alt="Exportações e relatórios do pipeline MLOps">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section section-padding">
+        <div class="section-header">
+          <h2>Contato</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="contact-content">
+          <p>Atualmente aberto a novas oportunidades e desafios inovadores na área de Inteligência Artificial. Você pode
+            falar comigo pelo LinkedIn ou diretamente no WhatsApp.</p>
+          <a href="https://wa.me/5593991271984?text=Ol%C3%A1%20Carlos%2C%20vim%20pelo%20seu%20portf%C3%B3lio."
+            target="_blank" rel="noreferrer" class="btn btn-primary" style="margin-top: 20px;">Enviar Mensagem no
+            WhatsApp</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2026 Carlos Vinicios - Cientista de Dados. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Modal Dialog for Details -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+          <div class="modal-carousel" id="modal-carousel">
+            <div class="modal-carousel-track" id="modal-carousel-track"></div>
+            <button type="button" class="carousel-control carousel-prev" id="carousel-prev"
+              aria-label="Imagem anterior">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button type="button" class="carousel-control carousel-next" id="carousel-next" aria-label="Próxima imagem">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="carousel-dots" id="modal-carousel-dots"></div>
+            <div class="carousel-hint" id="modal-carousel-hint">
+              <i class="fas fa-arrows-left-right"></i>
+              <span>Clique nas setas laterais para ver as outras imagens</span>
+            </div>
+          </div>
+          <h3 id="modal-title">Título do Projeto</h3>
+          <div id="modal-tags" class="tags"></div>
+          <div id="modal-desc">As descrições detalhadas aparecerão aqui.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
