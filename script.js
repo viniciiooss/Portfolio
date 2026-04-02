@@ -58,6 +58,23 @@ const carouselNext = document.getElementById('carousel-next');
 let currentCarouselImages = [];
 let currentCarouselIndex = 0;
 
+const lockPageScroll = () => {
+  const scrollY = window.scrollY;
+  document.documentElement.classList.add('modal-open');
+  document.body.classList.add('modal-open');
+  document.body.style.setProperty('--scroll-lock-offset', `${scrollY}px`);
+  document.body.dataset.scrollLock = String(scrollY);
+};
+
+const unlockPageScroll = () => {
+  const scrollY = Number(document.body.dataset.scrollLock || 0);
+  document.documentElement.classList.remove('modal-open');
+  document.body.classList.remove('modal-open');
+  document.body.style.removeProperty('--scroll-lock-offset');
+  delete document.body.dataset.scrollLock;
+  window.scrollTo(0, scrollY);
+};
+
 const setCarouselIndex = (index) => {
   if (!currentCarouselImages.length) return;
 
@@ -109,6 +126,7 @@ const renderCarousel = (images, title) => {
 
 const closeProjectModal = () => {
   modal.classList.remove('show');
+  unlockPageScroll();
 };
 
 detailButtons.forEach(btn => {
@@ -161,6 +179,7 @@ detailButtons.forEach(btn => {
 
     // show modal
     modal.classList.add('show');
+    lockPageScroll();
   });
 });
 
