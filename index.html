@@ -347,6 +347,124 @@
               </div>
             </div>
           </div>
+
+          <!-- Project 5: SGI / MENP -->
+          <div class="project-card" data-title="SGI / MENP - Sistema de Gestão Interna"
+            data-img="Projetos/Attachments/projeto_sgi/sgi-01.png"
+            data-tags="PHP,CodeIgniter,Doctrine,MySQL,Oracle,Docker">
+            <div class="project-img">
+              <img src="Projetos/Attachments/projeto_sgi/sgi-01.png" alt="SGI / MENP">
+            </div>
+            <div class="project-content">
+              <h3>SGI / MENP</h3>
+              <p>Sistema interno de gestão para administração pública, com backend voltado a cadastros, demandas,
+                atendimentos, documentos, relatórios, dashboards e integrações com MySQL e Oracle.</p>
+              <div class="tags">
+                <span>PHP</span>
+                <span>CodeIgniter</span>
+                <span>Doctrine</span>
+                <span>MySQL</span>
+                <span>Oracle</span>
+                <span>Docker</span>
+              </div>
+              <button class="btn btn-primary btn-details mt-10">Ver Detalhes</button>
+            </div>
+            <div class="project-details" style="display: none;">
+              <p>Atuei no desenvolvimento de grande parte do backend do SGI / MENP, um sistema interno usado em
+                contexto governamental para centralizar processos administrativos, operacionais e de negociação
+                institucional. A plataforma reúne módulos de cadastros, demandas, atas de reunião, atendimentos,
+                repositório de arquivos, consultas analíticas, relatórios e integrações com bases externas.</p>
+              <h4>Stack utilizada</h4>
+              <ul>
+                <li><strong>PHP + CodeIgniter:</strong> arquitetura MVC legada com evolução contínua de regras de
+                  negócio e controllers administrativos.</li>
+                <li><strong>Doctrine ORM:</strong> modelagem, persistência relacional e consultas com QueryBuilder.</li>
+                <li><strong>MySQL e Oracle:</strong> base principal operacional com integrações analíticas e de
+                  auditoria em ambiente Oracle.</li>
+                <li><strong>Docker:</strong> padronização do ambiente local para sustentação e manutenção do sistema.</li>
+              </ul>
+              <h4>O que foi implementado</h4>
+              <ul>
+                <li>Implementação e manutenção de controllers, entidades Doctrine, validações e fluxos de negócio em
+                  uma base CodeIgniter legada.</li>
+                <li>Construção de filtros dinâmicos, paginação, listagens administrativas e respostas JSON para telas
+                  interativas e dashboards.</li>
+                <li>Desenvolvimento de fluxos de upload, download, organização e exclusão de anexos e documentos.</li>
+                <li>Geração de relatórios em PDF, consultas analíticas e integrações com serviços e bases externas.</li>
+                <li>Sustentação técnica de múltiplos módulos conectados, equilibrando evolução funcional com
+                  estabilidade operacional.</li>
+              </ul>
+              <h4>Valor do projeto</h4>
+              <p>Esse case evidencia experiência real com backend orientado a regras de negócio, manutenção e evolução
+                de sistema legado, integração entre bancos distintos e apoio direto a fluxos administrativos em
+                produção.</p>
+              <div class="project-gallery">
+                <img src="Projetos/Attachments/projeto_sgi/sgi-01.png"
+                  alt="Tela principal do sistema SGI / MENP">
+                <img src="Projetos/Attachments/projeto_sgi/sgi-02.png"
+                  alt="Módulo operacional do sistema SGI / MENP">
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Backend IA WhatsApp -->
+          <div class="project-card" data-title="Planejamento Financeiro Pessoal com IA no WhatsApp"
+            data-img="Projetos/Attachments/projeto_backend_IA/backend-ia-01.png"
+            data-tags="FastAPI,PostgreSQL,LangChain,Gemini,Groq Whisper,Evolution API">
+            <div class="project-img">
+              <img src="Projetos/Attachments/projeto_backend_IA/backend-ia-01.png"
+                alt="Planejamento Financeiro Pessoal com IA no WhatsApp">
+            </div>
+            <div class="project-content">
+              <h3>Planejamento Financeiro Pessoal com IA</h3>
+              <p>Backend de IA para automação financeira via WhatsApp, com processamento multimodal de texto, imagens
+                de boletos/notas e áudios, confirmação antes do salvamento e persistência estruturada em PostgreSQL.</p>
+              <div class="tags">
+                <span>FastAPI</span>
+                <span>PostgreSQL</span>
+                <span>LangChain</span>
+                <span>Gemini</span>
+                <span>Groq Whisper</span>
+                <span>Evolution API</span>
+              </div>
+              <button class="btn btn-primary btn-details mt-10">Ver Detalhes</button>
+            </div>
+            <div class="project-details" style="display: none;">
+              <p>Implementei um backend de IA para automação de contas domésticas via WhatsApp, capaz de transformar
+                mensagens em texto, imagens de boletos e notas fiscais, além de áudios, em registros financeiros
+                estruturados no banco de dados. O sistema combina integração via webhook, agentes especializados por
+                modalidade, validação dos dados extraídos e confirmação do usuário antes da persistência final.</p>
+              <h4>Stack utilizada</h4>
+              <ul>
+                <li><strong>FastAPI:</strong> backend assíncrono para APIs, webhooks e organização das camadas da aplicação.</li>
+                <li><strong>PostgreSQL:</strong> persistência relacional com suporte a payloads semiestruturados em JSONB.</li>
+                <li><strong>LangChain + Gemini:</strong> extração estruturada e padronização de dados a partir de texto e imagem.</li>
+                <li><strong>Groq Whisper:</strong> transcrição de áudios antes da estruturação dos dados financeiros.</li>
+                <li><strong>Evolution API:</strong> integração com WhatsApp para recebimento e envio das mensagens do fluxo.</li>
+              </ul>
+              <h4>Arquitetura de agentes</h4>
+              <ul>
+                <li><strong>Orquestrador de conversa:</strong> identifica contexto, etapa do fluxo e extrator adequado.</li>
+                <li><strong>Extratores especializados:</strong> processamento dedicado para texto livre, imagem e áudio.</li>
+                <li><strong>Validação e confirmação:</strong> o sistema normaliza valores, datas e categorias antes de solicitar aprovação do usuário.</li>
+              </ul>
+              <h4>O que foi implementado</h4>
+              <ul>
+                <li>Pipeline multimodal para converter entradas não estruturadas em entidades financeiras persistíveis.</li>
+                <li>Persistência híbrida com dados relacionais e payload extraído em JSONB para auditoria e reprocessamento.</li>
+                <li>Consultas de contas pendentes, resumo mensal de gastos e rastreabilidade operacional por logs.</li>
+                <li>Observabilidade com Loguru, incluindo trilha de execução, rotação de logs e separação de erros críticos.</li>
+              </ul>
+              <div class="project-gallery">
+                <img src="Projetos/Attachments/projeto_backend_IA/backend-ia-01.png"
+                  alt="Fluxo principal do backend IA financeiro">
+                <img src="Projetos/Attachments/projeto_backend_IA/backend-ia-02.png"
+                  alt="Arquitetura multimodal do backend IA financeiro">
+                <img src="Projetos/Attachments/projeto_backend_IA/backend-ia-03.png"
+                  alt="Componentes do backend IA financeiro no WhatsApp">
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
